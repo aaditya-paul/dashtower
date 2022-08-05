@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
+import Head from 'next/head';
 
 import '../styles/globals.css';
 
@@ -27,6 +28,38 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className='font-inter antialiased bg-gray-900 text-gray-200 tracking-tight'>
+      <Head>
+        <title>DashTower</title>
+        <meta name='title' content='DashTower' />
+        <meta
+          name='description'
+          content='Your internet presence needs better care. DashTower supercharges your business with custom branding plans. '
+        />
+
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://metatags.io/' />
+        <meta property='og:title' content='DashTower' />
+        <meta
+          property='og:description'
+          content='Your internet presence needs better care. DashTower supercharges your business with custom branding plans. '
+        />
+        <meta
+          property='og:image'
+          content='https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png'
+        />
+
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://metatags.io/' />
+        <meta property='twitter:title' content='DashTower' />
+        <meta
+          property='twitter:description'
+          content='Your internet presence needs better care. DashTower supercharges your business with custom branding plans. '
+        />
+        <meta
+          property='twitter:image'
+          content='https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png'
+        />
+      </Head>
       <Component {...pageProps} />
     </div>
   );
