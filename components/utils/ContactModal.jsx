@@ -48,7 +48,7 @@ const ContactModal = () => {
       <div className='flex flex-wrap -mx-3 mb-4'>
         <div className='w-full px-3'>
           <label className='block text-gray-400 text-sm mb-1' htmlFor='message'>
-            Your Business's Social and Internet Links
+            Your Business Social and Internet Links
           </label>
           <textarea
             id='message'
