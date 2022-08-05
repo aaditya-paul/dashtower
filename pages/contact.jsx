@@ -1,7 +1,7 @@
-import Header from '../components/partials/Header';
-import PageIllustration from '../components/partials/PageIllustration';
-import CtaContact from '../components/partials/CtaContact';
-import Footer from '../components/partials/Footer';
+import Header from 'components/partials/Header';
+import PageIllustration from 'components/partials/PageIllustration';
+import CtaContact from 'components/partials/CtaContact';
+import Footer from 'components/partials/Footer';
 
 function Contact() {
   return (

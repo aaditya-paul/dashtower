@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Header from '../components/partials/Header';
-import PageIllustration from '../components/partials/PageIllustration';
-import Footer from '../components/partials/Footer';
+import Header from 'components/partials/Header';
+import PageIllustration from 'components/partials/PageIllustration';
+import Footer from 'components/partials/Footer';
 
 function PageNotFound() {
   return (
