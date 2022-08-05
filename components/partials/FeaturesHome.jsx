@@ -120,8 +120,8 @@ function FeaturesHome() {
                     />
                     <div>
                       <blockquote className='text-gray-400 italic m-0 mb-3'>
-                        "Lorem ipsum is placeholder text commonly used in the
-                        graphic, print, and publishing".
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing.
                       </blockquote>
                       <div className='text-gray-700 font-medium'>
                         <cite className='text-gray-200 not-italic'>

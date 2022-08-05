@@ -127,7 +127,7 @@ function HeroHome() {
                               className='w-full justify-center rounded-sm border border-transparent px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2'
                               onClick={closeModal}
                             >
-                              I don't need free audit!
+                              I dont need free audit!
                             </button>
                           </div>
                         </Dialog.Panel>
