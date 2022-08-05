@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+import { Dialog } from '@headlessui/react';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
