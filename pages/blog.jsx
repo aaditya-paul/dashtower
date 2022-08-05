@@ -1,17 +1,12 @@
 import React from 'react';
 
-import Header from '../components/partials/Header'; //
+import Header from '../components/partials/Header';
 import PageIllustration from '../components/partials/PageIllustration';
-import HeroHome from '../components/partials/HeroHome';
-import Process from '../components/partials/Process';
-import FeaturesHome from '../components/partials/FeaturesHome';
-import Tabs from '../components/partials/Tabs';
-import Target from '../components/partials/Target';
-import News from '../components/partials/News';
+import BlogList from '../components/partials/BlogList';
 import Newsletter from '../components/partials/Newsletter';
 import Footer from '../components/partials/Footer';
 
-function Home() {
+function Blog() {
   return (
     <div className='flex flex-col min-h-screen overflow-hidden'>
       {/*  Site header */}
@@ -28,12 +23,7 @@ function Home() {
         </div>
 
         {/*  Page sections */}
-        <HeroHome />
-        <Process />
-        <FeaturesHome />
-        {/* <Tabs /> */}
-        <Target />
-        <News />
+        <BlogList />
         <Newsletter />
       </main>
 
@@ -43,4 +33,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Blog;

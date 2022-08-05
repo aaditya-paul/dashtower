@@ -64,11 +64,9 @@ function FeaturesHome() {
                   <div className='font-architects-daughter text-xl text-purple-600 mb-2'>
                     Lighting fast workflow
                   </div>
-                  <h3 className='h3 mb-3'>Say hello to research data</h3>
+                  <h3 className='h3 mb-3'>Say hello to DashTower</h3>
                   <p className='text-xl text-gray-400 mb-4'>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa.
+                    DashTower helps your business stand out on the internet.
                   </p>
                   <ul className='flex flex-wrap text-lg text-gray-400 -mx-2 -my-1'>
                     <li className='flex items-center mx-2 my-1'>
@@ -79,7 +77,7 @@ function FeaturesHome() {
                       >
                         <path d='M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z' />
                       </svg>
-                      <span>Premium statistics</span>
+                      <span>Premium Support</span>
                     </li>
                     <li className='flex items-center mx-2 my-1'>
                       <svg
@@ -89,7 +87,7 @@ function FeaturesHome() {
                       >
                         <path d='M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z' />
                       </svg>
-                      <span>Unlimited jobs</span>
+                      <span>Small but Efficient Team</span>
                     </li>
                     <li className='flex items-center mx-2 my-1'>
                       <svg
@@ -99,7 +97,7 @@ function FeaturesHome() {
                       >
                         <path d='M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z' />
                       </svg>
-                      <span>Free goods</span>
+                      <span>Simpler Workflow</span>
                     </li>
                     <li className='flex items-center mx-2 my-1'>
                       <svg
@@ -109,17 +107,7 @@ function FeaturesHome() {
                       >
                         <path d='M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z' />
                       </svg>
-                      <span>No code required</span>
-                    </li>
-                    <li className='flex items-center mx-2 my-1'>
-                      <svg
-                        className='w-3 h-3 fill-current text-green-500 mr-2 shrink-0'
-                        viewBox='0 0 12 12'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path d='M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z' />
-                      </svg>
-                      <span>Always up to date</span>
+                      <span>Industry Experience</span>
                     </li>
                   </ul>
                   <div className='flex items-start mt-8'>

@@ -1,3 +1,13 @@
+## Git Branching Strategy
+#### Main Branches
+- `main`: The main branch of the project.
+- `develop`: The development branch of the project.
+- `feature/<feature_name>`: A feature branch.
+- `release/<release_name>`: A release branch.
+- `hotfix/<hotfix_name>`: A hotfix branch.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -8,15 +8,15 @@ function Process() {
           {/* Section header */}
           <div className='max-w-3xl mx-auto text-center pb-12 md:pb-20'>
             <h2 className='h2 mb-4' data-aos='fade-up'>
-              Built exclusively for you
+              How We Work
             </h2>
             <p
               className='text-xl text-gray-400'
               data-aos='fade-up'
               data-aos-delay='200'
             >
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit laborum — semper quis lectus nulla.
+              Dashtower helps your brand to get on the market as quickly as
+              possible. We work in a three step process.
             </p>
           </div>
 
@@ -65,11 +65,10 @@ function Process() {
                 />
               </svg>
               <h4 className='h4 mb-2'>
-                <span className='text-gray-400'>1</span>. Acquisition
+                <span className='text-gray-400'>1</span>. Identify
               </h4>
               <p className='text-lg text-gray-400 text-center'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
+                We Identify Your Brand Needs and Document Them Carefully.
               </p>
             </div>
 
@@ -117,11 +116,11 @@ function Process() {
                 </g>
               </svg>
               <h4 className='h4 mb-2'>
-                <span className='text-gray-400'>2</span>. Activation
+                <span className='text-gray-400'>2</span>. Ideate
               </h4>
               <p className='text-lg text-gray-400 text-center'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
+                We Design a Carefully Crafted Plan to Help You Recognized and
+                Grow Your Business.
               </p>
             </div>
 
@@ -158,11 +157,11 @@ function Process() {
                 />
               </svg>
               <h4 className='h4 mb-2'>
-                <span className='text-gray-400'>3</span>. Retention
+                <span className='text-gray-400'>3</span>. Work
               </h4>
               <p className='text-lg text-gray-400 text-center'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
+                We Work with You and Your Team to Help Generate Leads from the
+                Internet
               </p>
             </div>
           </div>

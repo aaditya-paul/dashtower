@@ -40,7 +40,7 @@ function Target() {
                     data-aos='fade-left'
                     data-aos-anchor='[data-aos-id-target]'
                   >
-                    Be the change you want to see
+                    Reach the heights you always dreamed of
                   </div>
                   <div
                     className='mt-6'
@@ -49,12 +49,10 @@ function Target() {
                     data-aos-anchor='[data-aos-id-target]'
                   >
                     <h4 className='h4 mb-2'>
-                      <span className='text-purple-600'>.</span> For developers
+                      <span className='text-purple-600'>.</span> Stay Ahead
                     </h4>
                     <p className='text-lg text-gray-400'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                      Stay ahead of your competitor by amping up your internet
                     </p>
                   </div>
                   <div
@@ -64,12 +62,11 @@ function Target() {
                     data-aos-anchor='[data-aos-id-target]'
                   >
                     <h4 className='h4 mb-2'>
-                      <span className='text-teal-500'>.</span> For designers
+                      <span className='text-teal-500'>.</span> Get Visible
                     </h4>
                     <p className='text-lg text-gray-400'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                      Your brand needs to get visible. We help you promote your
+                      brand on the internet.
                     </p>
                   </div>
                   <div
@@ -79,12 +76,10 @@ function Target() {
                     data-aos-anchor='[data-aos-id-target]'
                   >
                     <h4 className='h4 mb-2'>
-                      <span className='text-pink-500'>.</span> For teams
+                      <span className='text-pink-500'>.</span> Generate Leads
                     </h4>
                     <p className='text-lg text-gray-400'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                      Earn more by generating leads for your business.
                     </p>
                   </div>
                 </div>

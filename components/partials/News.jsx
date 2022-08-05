@@ -9,7 +9,7 @@ function News() {
           {/* Section header */}
           <div className='max-w-3xl mx-auto text-center pb-12 md:pb-20'>
             <h2 className='h2' data-aos='fade-up'>
-              Refreshing news for developers and designers
+              Stay in the loop with branding and marketing articles
             </h2>
           </div>
 

@@ -49,15 +49,16 @@ function HeroHome() {
           {/* Section header */}
           <div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
             <h1 className='h1 mb-4' data-aos='fade-up'>
-              Want to Grow Your Business?
+              Supercharge Your Internet Presence
             </h1>
             <p
               className='text-xl text-gray-400 mb-8'
               data-aos='fade-up'
               data-aos-delay='200'
             >
-              Our landing page template works on all devices, so you only have
-              to set it up once, and get beautiful results forever.
+              We grow your business with digital marketing and development. Your
+              online presence is your employee number 1. Unleash the full
+              potential of your employee with us.
             </p>
             <div className='max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center'>
               <div data-aos='fade-up' data-aos-delay='400'>
@@ -65,7 +66,7 @@ function HeroHome() {
                   className='btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0'
                   href='#0'
                 >
-                  Start free trial
+                  Supercharge
                 </a>
               </div>
               <div data-aos='fade-up' data-aos-delay='600'>
@@ -80,7 +81,7 @@ function HeroHome() {
           </div>
 
           {/* Hero image */}
-          <div>
+          {/* <div>
             <div
               className='relative flex justify-center items-center'
               data-aos='fade-up'
@@ -127,10 +128,10 @@ function HeroHome() {
                   />
                 </svg>
               </a>
-            </div>
+            </div> */}
 
-            {/* Modal */}
-            <Modal
+          {/* Modal */}
+          {/* <Modal
               id='modal'
               ariaLabel='modal-headline'
               show={videoModalOpen}
@@ -145,7 +146,7 @@ function HeroHome() {
                 ></iframe>
               </div>
             </Modal>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
