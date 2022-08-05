@@ -54,8 +54,7 @@ function Header() {
 
           {/* Desktop navigation */}
           <nav className='hidden md:flex md:grow'>
-            {/* Desktop menu links */}
-            <ul className='flex grow justify-end flex-wrap items-center'>
+            {/* <ul className='flex grow justify-end flex-wrap items-center'>
               <li className='text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out'>
                 <Link href='/features'>Features</Link>
               </li>
@@ -68,9 +67,9 @@ function Header() {
               <li className='text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out'>
                 <Link href='/about'>About us</Link>
               </li>
-              {/* 1st level: hover */}
+         
               <Dropdown title='Support'>
-                {/* 2nd level: hover */}
+             
                 <li className='font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight'>
                   <Link href='/contact'>Contact us</Link>
                 </li>
@@ -81,19 +80,18 @@ function Header() {
                   <Link href='/404'>404</Link>
                 </li>
               </Dropdown>
-            </ul>
+            </ul> */}
 
             {/* Desktop sign in links */}
             <ul className='flex grow justify-end flex-wrap items-center'>
               <li className='font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out'>
-                <Link href='/signin'>Sign in</Link>
+                <Link href='/signin'>Contact Us</Link>
               </li>
               <li className='btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3'>
-                <Link href='/signup'>Sign up</Link>
+                <Link href='/signup'>Request Free Audit</Link>
               </li>
             </ul>
           </nav>
-
           {/* Mobile menu */}
           <div className='md:hidden'>
             {/* Hamburger button */}
@@ -128,7 +126,7 @@ function Header() {
               }
             >
               <ul className='bg-gray-800 px-4 py-2'>
-                <li className='flex text-gray-300 hover:text-gray-200 py-2'>
+                {/* <li className='flex text-gray-300 hover:text-gray-200 py-2'>
                   <Link href='/features'>Features</Link>
                 </li>
                 <li className='flex text-gray-300 hover:text-gray-200 py-2'>
@@ -153,17 +151,12 @@ function Header() {
                       <Link href='/404'>404</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li className='flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center'>
-                  <Link href='/signin'>Sign in</Link>
+                  <Link href='/signin'>Contact Us</Link>
                 </li>
-                <li>
-                  <Link
-                    href='/signup'
-                    className='font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out'
-                  >
-                    Sign up
-                  </Link>
+                <li className='font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out'>
+                  <Link href='/signup'>Request Free Audit</Link>
                 </li>
               </ul>
             </nav>
