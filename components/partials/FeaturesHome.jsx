@@ -62,7 +62,7 @@ function FeaturesHome() {
               >
                 <div className='md:pr-4 lg:pr-12 xl:pr-16'>
                   <div className='font-architects-daughter text-xl text-purple-600 mb-2'>
-                    Lighting fast workflow
+                    Lightning fast workflow
                   </div>
                   <h3 className='h3 mb-3'>Say hello to DashTower</h3>
                   <p className='text-xl text-gray-400 mb-4'>
