@@ -6,7 +6,8 @@
 - `release/<release_name>`: A release branch.
 - `hotfix/<hotfix_name>`: A hotfix branch.
 
-
+## Known Issues
+- Filename casing and import casing should be consistent.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
