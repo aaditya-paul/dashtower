@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function News() {
   return (
@@ -21,7 +21,7 @@ function News() {
                 <header>
                   <Link href='/blog-post'>
                     <figure className='block mb-6 relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                      <img
+                      <Image
                         className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                         src={'/assets/news-01.jpg'}
                         width='352'
@@ -62,7 +62,7 @@ function News() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <a href='#0'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'/assets/news-author-01.jpg'}
                       width='40'
@@ -92,7 +92,7 @@ function News() {
                 <header>
                   <Link className='' href='/blog-post'>
                     <figure className='block mb-6 relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                      <img
+                      <Image
                         className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                         src={'/assets/news-02.jpg'}
                         width='352'
@@ -133,7 +133,7 @@ function News() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <a href='#0'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'/assets/news-author-02.jpg'}
                       width='40'
@@ -163,7 +163,7 @@ function News() {
                 <header>
                   <Link className='' href='/blog-post'>
                     <figure className='block mb-6 relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                      <img
+                      <Image
                         className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                         src={'/assets/news-03.jpg'}
                         width='352'
@@ -204,7 +204,7 @@ function News() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <a href='#0'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'/assets/news-author-03.jpg'}
                       width='40'

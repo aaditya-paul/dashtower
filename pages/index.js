@@ -1,15 +1,12 @@
-import React from 'react';
-
-import Header from '../components/partials/Header'; //
-import PageIllustration from '../components/partials/PageIllustration';
-import HeroHome from '../components/partials/HeroHome';
-import Process from '../components/partials/Process';
-import FeaturesHome from '../components/partials/FeaturesHome';
-import Tabs from '../components/partials/Tabs';
-import Target from '../components/partials/Target';
-import News from '../components/partials/News';
-import Newsletter from '../components/partials/Newsletter';
-import Footer from '../components/partials/Footer';
+import Header from 'components/partials/Header';
+import PageIllustration from 'components/partials/PageIllustration';
+import HeroHome from 'components/partials/HeroHome';
+import Process from 'components/partials/Process';
+import FeaturesHome from 'components/partials/FeaturesHome';
+import Target from 'components/partials/Target';
+import News from 'components/partials/News';
+import Newsletter from 'components/partials/Newsletter';
+import Footer from 'components/partials/Footer';
 
 function Home() {
   return (

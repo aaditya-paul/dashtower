@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 function FeaturesHome() {
   return (
@@ -16,7 +16,7 @@ function FeaturesHome() {
                 data-aos-anchor='[data-aos-id-features-home]'
               >
                 <div className='relative'>
-                  <img
+                  <Image
                     className='md:max-w-none'
                     src={'/assets/features-illustration.png'}
                     width='540'
@@ -111,7 +111,7 @@ function FeaturesHome() {
                     </li>
                   </ul>
                   <div className='flex items-start mt-8'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'/assets/features-avatar.jpg'}
                       width='40'

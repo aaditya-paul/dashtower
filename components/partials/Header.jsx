@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import Dropdown from '../utils/Dropdown';
+import Image from 'next/image';
 
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -42,10 +42,12 @@ function Header() {
           <div className='shrink-0 mr-4'>
             {/* Logo */}
             <Link href='/' className='block' aria-label='Cruip'>
-              <img
+              <Image
                 src='/assets/logo.svg'
                 alt='Cruip'
                 className='w-12 h-12 text-purple-600 fill-current'
+                height={45}
+                width={45}
               />
             </Link>
           </div>

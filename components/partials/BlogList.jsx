@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function BlogList() {
   return (
@@ -27,7 +27,7 @@ function BlogList() {
                     aria-hidden='true'
                   ></div>
                   <figure className='relative h-0 pb-9/16 md:pb-3/4 lg:pb-9/16 overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out'>
-                    <img
+                    <Image
                       className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                       src={'assets/blog-post-01.jpg'}
                       width='540'
@@ -62,7 +62,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-04.jpg'}
                       width='40'
@@ -100,7 +100,7 @@ function BlogList() {
                   <Link href='/blog-post'>
                     <div className='block mb-6'>
                       <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                        <img
+                        <Image
                           className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                           src={'assets/NewsImage01'}
                           width='352'
@@ -132,7 +132,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-01.jpg'}
                       width='40'
@@ -160,7 +160,7 @@ function BlogList() {
                   <Link href='/blog-post'>
                     <div className='block mb-6'>
                       <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                        <img
+                        <Image
                           className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                           src={'assets/news-02.jpg'}
                           width='352'
@@ -192,7 +192,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-02.jpg'}
                       width='40'
@@ -220,7 +220,7 @@ function BlogList() {
                   <Link href='/blog-post'>
                     <div className='block mb-6'>
                       <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                        <img
+                        <Image
                           className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                           src={'assets/news-03.jpg'}
                           width='352'
@@ -252,7 +252,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-03.jpg'}
                       width='40'
@@ -276,7 +276,7 @@ function BlogList() {
                   <Link href='/blog-post'>
                     <div className='block mb-6'>
                       <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                        <img
+                        <Image
                           className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                           src={'assets/news-04.jpg'}
                           width='352'
@@ -308,7 +308,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-05.jpg'}
                       width='40'
@@ -336,7 +336,7 @@ function BlogList() {
                   <Link href='/blog-post'>
                     <div className='block mb-6'>
                       <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                        <img
+                        <Image
                           className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                           src={'assets/news-05.jpg'}
                           width='352'
@@ -365,7 +365,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-03.jpg'}
                       width='40'
@@ -393,7 +393,7 @@ function BlogList() {
                   <Link href='/blog-post'>
                     <div className='block mb-6'>
                       <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                        <img
+                        <Image
                           className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                           src={'assets/news-06.jpg'}
                           width='352'
@@ -425,7 +425,7 @@ function BlogList() {
                 </p>
                 <footer className='flex items-center mt-4'>
                   <Link href='#'>
-                    <img
+                    <Image
                       className='rounded-full shrink-0 mr-4'
                       src={'assets/news-author-06.jpg'}
                       width='40'

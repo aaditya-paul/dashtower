@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Header from 'components/partials/Header';
 import PageIllustration from 'components/partials/PageIllustration';
 import BlogList from 'components/partials/BlogList';

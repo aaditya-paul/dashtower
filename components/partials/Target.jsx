@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 function Target() {
   return (
@@ -23,7 +23,7 @@ function Target() {
                 data-aos-delay='200'
                 data-aos-anchor='[data-aos-id-target]'
               >
-                <img
+                <Image
                   className='mx-auto md:max-w-none'
                   src={'/assets/features-02-image.png'}
                   width='540'

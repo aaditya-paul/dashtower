@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
+import Image from 'next/image';
 
 function Tabs() {
   const [tab, setTab] = useState(1);
@@ -158,7 +159,7 @@ function Tabs() {
               >
                 <article className='relative max-w-md mx-auto md:max-w-none'>
                   <figure className='md:absolute md:inset-y-0 md:right-0 md:w-1/2'>
-                    <img
+                    <Image
                       className='w-full h-full object-cover'
                       src={'/assets/tabs-image-01.jpg'}
                       width='516'
@@ -209,7 +210,7 @@ function Tabs() {
               >
                 <article className='relative max-w-md mx-auto md:max-w-none'>
                   <figure className='md:absolute md:inset-y-0 md:left-0 md:w-1/2'>
-                    <img
+                    <Image
                       className='w-full h-full object-cover'
                       src={'/assets/hero-image-01.jpg'}
                       width='516'
@@ -260,7 +261,7 @@ function Tabs() {
               >
                 <article className='relative max-w-md mx-auto md:max-w-none'>
                   <figure className='md:absolute md:inset-y-0 md:right-0 md:w-1/2'>
-                    <img
+                    <Image
                       className='w-full h-full object-cover'
                       src={'/assets/tabs-image-01.jpg'}
                       width='516'
@@ -311,7 +312,7 @@ function Tabs() {
               >
                 <article className='relative max-w-md mx-auto md:max-w-none'>
                   <figure className='md:absolute md:inset-y-0 md:left-0 md:w-1/2'>
-                    <img
+                    <Image
                       className='w-full h-full object-cover'
                       src={'/assets/hero-image-01.jpg'}
                       width='516'
@@ -362,7 +363,7 @@ function Tabs() {
               >
                 <article className='relative max-w-md mx-auto md:max-w-none'>
                   <figure className='md:absolute md:inset-y-0 md:right-0 md:w-1/2'>
-                    <img
+                    <Image
                       className='w-full h-full object-cover'
                       src={'/assets/tabs-image-01.jpg'}
                       width='516'

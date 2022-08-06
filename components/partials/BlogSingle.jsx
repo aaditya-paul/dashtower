@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const BlogSingle = () => {
   return (
@@ -32,7 +33,7 @@ const BlogSingle = () => {
                     data-aos-delay='400'
                   >
                     <Link href='#'>
-                      <img
+                      <Image
                         className='rounded-full shrink-0 mr-4'
                         src={'/assets/news-author-04.jpg'}
                         width='40'
@@ -70,7 +71,7 @@ const BlogSingle = () => {
                 data-aos='fade-up'
                 data-aos-delay='600'
               >
-                <img
+                <Image
                   className='w-full'
                   src={'/assets/news-single.jpg'}
                   width='1024'
@@ -147,7 +148,7 @@ const BlogSingle = () => {
                     <div className='block mb-6'>
                       <Link href='/blog-post'>
                         <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                          <img
+                          <Image
                             className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                             src={'/assets/news-04.jpg'}
                             width='352'
@@ -180,7 +181,7 @@ const BlogSingle = () => {
                   </p>
                   <footer className='flex items-center mt-4'>
                     <Link href='#'>
-                      <img
+                      <Image
                         className='rounded-full shrink-0 mr-4'
                         src={'/assets/news-author-05.jpg'}
                         width='40'
@@ -208,7 +209,7 @@ const BlogSingle = () => {
                     <div className='block mb-6'>
                       <Link href='/blog-post'>
                         <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                          <img
+                          <Image
                             className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                             src={'/assets/news-05.jpg'}
                             width='352'
@@ -246,7 +247,7 @@ const BlogSingle = () => {
                   </p>
                   <footer className='flex items-center mt-4'>
                     <Link href='#'>
-                      <img
+                      <Image
                         className='rounded-full shrink-0 mr-4'
                         src={'/assets/news-author-03.jpg'}
                         width='40'
@@ -274,7 +275,7 @@ const BlogSingle = () => {
                     <div className='block mb-6'>
                       <Link href='/blog-post'>
                         <figure className='relative h-0 pb-9/16 overflow-hidden rounded-sm'>
-                          <img
+                          <Image
                             className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out'
                             src={'/assets/news-06.jpg'}
                             width='352'
@@ -307,7 +308,7 @@ const BlogSingle = () => {
                   </p>
                   <footer className='flex items-center mt-4'>
                     <Link href='#'>
-                      <img
+                      <Image
                         className='rounded-full shrink-0 mr-4'
                         src={'/assets/news-author-06.jpg'}
                         width='40'

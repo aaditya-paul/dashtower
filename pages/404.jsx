@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Header from 'components/partials/Header';
 import PageIllustration from 'components/partials/PageIllustration';
@@ -30,7 +30,7 @@ function PageNotFound() {
                   className='relative inline-flex flex-col mb-6'
                   data-aos='fade-up'
                 >
-                  <img
+                  <Image
                     className='rounded-full'
                     src={'/assets/404.jpg'}
                     width='196'

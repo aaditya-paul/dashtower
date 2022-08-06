@@ -1,12 +1,10 @@
-import React, { useState, Fragment } from 'react';
-import Modal from '../utils/Modal';
+import { useState, Fragment } from 'react';
 
 import { Dialog, Transition } from '@headlessui/react';
 
 import ContactModal from '../utils/ContactModal';
 
 function HeroHome() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
   let [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {

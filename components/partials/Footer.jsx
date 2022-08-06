@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Footer() {
   return (
@@ -13,10 +13,12 @@ function Footer() {
               <div className='mb-2 inline-block' aria-label='Cruip'>
                 {/* Logo */}
                 <Link href='/'>
-                  <img
+                  <Image
                     src='/assets/logo.svg'
                     alt='Cruip'
                     className='w-12 h-12 text-purple-600 fill-current'
+                    height={50}
+                    width={50}
                   />
                 </Link>
               </div>
