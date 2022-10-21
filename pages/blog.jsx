@@ -4,7 +4,7 @@ import BlogList from 'components/partials/BlogList';
 import Newsletter from 'components/partials/Newsletter';
 import Footer from 'components/partials/Footer';
 
-function Blog() {
+function Blog(props) {
   return (
     <div className='flex flex-col min-h-screen overflow-hidden'>
       {/*  Site header */}
@@ -21,7 +21,7 @@ function Blog() {
         </div>
 
         {/*  Page sections */}
-        <BlogList />
+        <BlogList posts={props.posts} />
         <Newsletter />
       </main>
 
@@ -32,3 +32,19 @@ function Blog() {
 }
 
 export default Blog;
+
+const FRONTEND_URL = process.env.NEXT_PUBLIC_FRONTEND_URL;
+
+export const getServerSideProps = async () => {
+  const featuredPost = await fetch(`${FRONTEND_URL}/api/featured`);
+  const featured = await featuredPost.json();
+  const allPosts = await fetch(`${FRONTEND_URL}/api/posts`);
+  const posts = await allPosts.json();
+
+  return {
+    props: {
+      featured,
+      posts,
+    },
+  };
+};
