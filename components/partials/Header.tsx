@@ -42,16 +42,18 @@ function Header(): JSX.Element {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
-              <div className="flex items-center">
-                <Image
-                  src="/assets/logo.svg"
-                  alt="Cruip"
-                  className="w-12 h-12 text-purple-600 fill-current"
-                  height={45}
-                  width={45}
-                />
-                Dashtower
-              </div>
+              <a>
+                <div className="flex items-center">
+                  <Image
+                    src="/assets/logo.svg"
+                    alt="Cruip"
+                    className="w-12 h-12 text-purple-600 fill-current"
+                    height={45}
+                    width={45}
+                  />
+                  Dashtower
+                </div>
+              </a>
             </Link>
           </div>
 

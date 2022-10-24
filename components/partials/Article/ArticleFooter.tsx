@@ -9,7 +9,6 @@ interface PostDetails {
 }
 
 const ArticleFooter = ({ shareLinks }: { shareLinks: PostDetails }) => {
-  console.log(shareLinks);
   return (
     <footer>
       <div className="md:flex md:items-center md:justify-between text-center md:text-left">

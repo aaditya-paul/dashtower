@@ -6,6 +6,7 @@ import Image from "next/image";
 import { trimmer, humanDate } from "utils/common";
 
 import { Post } from "interfaces/Post";
+import Tags from "components/utils/Tags";
 
 const ArticleCard = ({ article }: { article: Post }): JSX.Element => {
   const excerpt =
@@ -33,14 +34,7 @@ const ArticleCard = ({ article }: { article: Post }): JSX.Element => {
           </div>
         </Link>
         <div className="mb-3">
-          <ul className="flex flex-wrap text-xs font-medium -m-1">
-            <li className="m-1 inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out">
-              <Link href="#">Product</Link>
-            </li>
-            <li className="m-1 inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-blue-500 hover:bg-blue-600 transition duration-150 ease-in-out">
-              <Link href="#">Engineering</Link>
-            </li>
-          </ul>
+          <Tags tags={article.tags} />
         </div>
         <h3 className="h4 mb-2 hover:text-gray-100 transition duration-150 ease-in-out">
           <Link href={`/blog/${article.slug}`}>
@@ -50,22 +44,16 @@ const ArticleCard = ({ article }: { article: Post }): JSX.Element => {
       </header>
       <p className="text-lg text-gray-400 grow">{trimmer(excerpt, 150)}</p>
       <footer className="flex items-center mt-4">
-        <Link href="#">
-          <a>
-            <Image
-              className="rounded-full shrink-0 mr-4"
-              src={article.authors[0].profile_image ?? "/assets/avatar.png"}
-              width="40"
-              height="40"
-              alt={article.authors[0].name}
-            />
-          </a>
-        </Link>
+        <Image
+          className="rounded-full shrink-0 mr-4"
+          src={article.authors[0].profile_image ?? "/assets/news-author-02.jpg"}
+          width="40"
+          height="40"
+          alt={article.authors[0].name}
+        />
         <div className="font-medium">
           <div className="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out">
-            <Link href="#">
-              <a>{article.authors[0].name}</a>
-            </Link>
+            <a>{article.authors[0].name}</a>
           </div>
           <span className="text-gray-700"> - </span>
           <span className="text-gray-500">{humanDate(article.created_at)}</span>

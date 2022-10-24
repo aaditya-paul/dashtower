@@ -10,7 +10,10 @@ export default async function getAllPosts(
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {
-  const url = `${CONTENT_API_URL}/posts/?key=${CONTENT_API_KEY}&fields=title,slug,feature_image,meta_description,custom_excerpt,excerpt,created_at,updated_at,reading_time,uuid&include=tags,authors`;
+  const { limit } = req.query;
+  const url = `${CONTENT_API_URL}/posts/?key=${CONTENT_API_KEY}&fields=title,slug,feature_image,meta_description,custom_excerpt,excerpt,created_at,updated_at,reading_time,uuid&include=tags,authors&limit=${
+    limit || 15
+  }`;
   try {
     const posts = await fetch(url).then(async (res) => await res.json());
 

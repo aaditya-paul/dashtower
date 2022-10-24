@@ -11,7 +11,7 @@ export interface Post {
   feature_image: string | null;
   meta_description: string | null;
   slug: string;
-  tags: string[];
+  tags: Tag[];
   title: string;
   uuid: string;
   authors: Author[];
@@ -53,4 +53,25 @@ export interface Blogpost extends Post {
   html: string;
   primary_author: Author;
   feature_image_caption: string | null;
+}
+
+export interface Tag {
+  id: string;
+  name: string;
+  slug: string;
+  description?: any;
+  feature_image?: any;
+  visibility: string;
+  og_image?: any;
+  og_title?: any;
+  og_description?: any;
+  twitter_image?: any;
+  twitter_title?: any;
+  twitter_description?: any;
+  meta_title?: any;
+  meta_description?: any;
+  codeinjection_head?: any;
+  codeinjection_foot?: any;
+  canonical_url?: any;
+  accent_color?: any;
 }

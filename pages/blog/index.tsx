@@ -30,7 +30,7 @@ function Blog(props: BlogProps): JSX.Element {
         </div>
 
         {/*  Page sections */}
-        <BlogList posts={props.posts.posts} />
+        <BlogList posts={props.posts.posts} featured={props.featured} />
         <Newsletter />
       </main>
 
@@ -46,7 +46,7 @@ const FRONTEND_URL =
   process.env.NEXT_PUBLIC_FRONTEND_URL ?? "http://localhost:3000";
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const featuredPost = await fetch(`${FRONTEND_URL}/api/featured`);
+  const featuredPost = await fetch(`${FRONTEND_URL}/api/featured?limit=1`);
   const featured = await featuredPost.json();
   const allPosts = await fetch(`${FRONTEND_URL}/api/posts`);
   const posts = await allPosts.json();

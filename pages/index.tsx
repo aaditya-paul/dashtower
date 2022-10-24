@@ -9,7 +9,9 @@ import News from "components/partials/News";
 import Newsletter from "components/partials/Newsletter";
 import Footer from "components/partials/Footer";
 
-function Home() {
+import { Posts } from "interfaces/Post";
+
+function Home({ posts }: { posts: Posts }) {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
@@ -31,7 +33,7 @@ function Home() {
         <FeaturesHome />
         {/* <Tabs /> */}
         <Target />
-        <News />
+        <News posts={posts} />
         <Newsletter />
       </main>
 
@@ -42,3 +44,17 @@ function Home() {
 }
 
 export default Home;
+
+const FRONTEND_URL =
+  process.env.NEXT_PUBLIC_FRONTEND_URL ?? "http://localhost:3000";
+
+export const getServerSideProps = async () => {
+  const latestPosts = await fetch(`${FRONTEND_URL}/api/posts?limit=3`);
+  const posts = await latestPosts.json();
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};
