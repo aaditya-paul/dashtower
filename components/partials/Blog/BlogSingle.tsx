@@ -1,6 +1,4 @@
-import React, { Fragment, useEffect } from "react";
-
-import Link from "next/link";
+import React, { useEffect } from "react";
 import Image from "next/image";
 
 import { Blogpost } from "interfaces/Post";
@@ -14,24 +12,21 @@ import ArticleCard from "../Article/ArticleCard";
 
 import { Post } from "interfaces/Post";
 
-const BlogSingle = ({ post }: { post: Blogpost }): JSX.Element => {
+import Tags from "components/utils/Tags";
+
+const BlogSingle = ({
+  post,
+  featured,
+}: {
+  post: Blogpost;
+  featured: Post[];
+}): JSX.Element => {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
 
   const BASE_URL = process.env.NEXT_PUBLIC_FRONTEND_URL;
   const POST_URL = `${BASE_URL}/blog/${post.slug}`;
-
-  const [getFeaturedArticles, setFeaturedArticles] = React.useState<Post[]>([]);
-
-  useEffect(() => {
-    const getFeatured = async () => {
-      const featuredPost = await fetch(`${BASE_URL}/api/posts?limit=3`);
-      const featured = await featuredPost.json();
-      setFeaturedArticles(featured.posts);
-    };
-    getFeatured();
-  });
 
   return (
     <>
@@ -87,14 +82,10 @@ const BlogSingle = ({ post }: { post: Blogpost }): JSX.Element => {
                       data-aos="fade-up"
                       data-aos-delay="600"
                     >
-                      <ul className="flex flex-wrap text-xs font-medium -m-1">
-                        <li className="m-1 inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out">
-                          <Link href="#">Product</Link>
-                        </li>
-                        <li className="m-1 inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-blue-500 hover:bg-blue-600 transition duration-150 ease-in-out">
-                          <Link href="#">Engineering</Link>
-                        </li>
-                      </ul>
+                      {
+                        // Loop through the tags and render the Tags component
+                        <Tags tags={post.tags} />
+                      }
                     </div>
                   </div>
                 </header>
@@ -142,8 +133,8 @@ const BlogSingle = ({ post }: { post: Blogpost }): JSX.Element => {
 
                 {/* Articles container */}
                 <div className="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start">
-                  {getFeaturedArticles &&
-                    getFeaturedArticles.map((article) => (
+                  {featured &&
+                    featured.map((article) => (
                       <ArticleCard key={article.uuid} article={article} />
                     ))}
                 </div>

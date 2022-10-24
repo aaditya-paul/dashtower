@@ -53,6 +53,8 @@ export interface Blogpost extends Post {
   html: string;
   primary_author: Author;
   feature_image_caption: string | null;
+  meta_title?: string;
+  meta_description: string | null;
 }
 
 export interface Tag {
