@@ -6,17 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "pre-commit": "npm run lint --fix && git add -A ."
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@tailwindcss/forms": "^0.5.2",
     "@tryghost/content-api": "^1.11.4",
     "aos": "^2.3.4",
+    "eslint-config-google": "^0.14.0",
     "husky": "^8.0.1",
     "next": "12.2.3",
+    "prismjs": "^1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-flatpickr": "^3.10.13",
@@ -24,10 +29,24 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@types/aos": "^3.0.4",
+    "@types/node": "^18.11.3",
+    "@types/prismjs": "^1.26.0",
+    "@types/react": "^18.0.21",
+    "@types/react-transition-group": "^4.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
     "autoprefixer": "^10.4.8",
-    "eslint": "8.21.0",
+    "eslint": "^8.26.0",
     "eslint-config-next": "12.2.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7"
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.1.7",
+    "typescript": "^4.8.4"
   }
 }

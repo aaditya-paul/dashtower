@@ -1,13 +1,7 @@
 {
-  "extends": [
-    "next",
-    "next/core-web-vitals"
-  ],
+  "extends": ["next", "next/core-web-vitals"],
   "rules": {
     "no-unused-vars": "error",
-    "indent": [
-      "error",
-      2
-    ]
+    "indent": ["error", 2]
   }
 }
