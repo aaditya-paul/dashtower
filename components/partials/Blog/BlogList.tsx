@@ -28,7 +28,6 @@ function BlogList({ featured, posts }: BlogListProps): JSX.Element {
           <div className="pb-12 md:pb-20">
             {featured?.posts && <FeaturedArticle post={featured.posts[0]} />}
           </div>
-
           {/*  Articles list */}
           <div className="max-w-sm mx-auto md:max-w-none">
             {/*  Section title */}
@@ -49,7 +48,6 @@ function BlogList({ featured, posts }: BlogListProps): JSX.Element {
               }
             </div>
           </div>
-
           {/*  Pagination */}
           <Pagination />
         </div>

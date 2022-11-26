@@ -17,7 +17,8 @@ interface BlogProps {
 }
 
 function BlogPost(props: BlogProps) {
-  const BASE_URL = process.env.NEXT_PUBLIC_FRONTEND_URL;
+  const BASE_URL =
+    process.env.NEXT_PUBLIC_FRONTEND_URL ?? "https://localhost:3000";
   const POST_URL = `${BASE_URL}/blog/${props.posts.posts[0].slug}`;
 
   // TODO: Use Vercel OG Image Generator For OG Image

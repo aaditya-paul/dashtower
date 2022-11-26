@@ -50,7 +50,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const featured = await featuredPost.json();
   const allPosts = await fetch(`${FRONTEND_URL}/api/posts`);
   const posts = await allPosts.json();
-
+  console.log(posts);
   return {
     props: {
       featured,
